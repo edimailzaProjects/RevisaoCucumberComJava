@@ -1,0 +1,298 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 6508101700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "BancoSteps.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Deve validar regras cadastro contas",
+        "description": "",
+        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 284743200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BancoSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 820559500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BancoSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1043519400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "adiciono a conta \"Conta de Teste\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Conta de Teste\"",
+                  "offset": 17
+                }
+              ],
+              "location": "BancoSteps.adicionoAConta(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 46758800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "recebo a mensagem \"Conta adicionada com sucesso!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Conta adicionada com sucesso!\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BancoSteps.receboAMensagem(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 6398721400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "BancoSteps.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Deve validar regras cadastro contas",
+        "description": "",
+        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 287250200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BancoSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 738593800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BancoSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 377615400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "adiciono a conta \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                }
+              ],
+              "location": "BancoSteps.adicionoAConta(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 36104900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "recebo a mensagem \"Informe o nome da conta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Informe o nome da conta\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BancoSteps.receboAMensagem(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7210040400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que desejo adicionar uma conta",
+            "match": {
+              "location": "BancoSteps.queDesejoAdicionarUmaConta()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Deve validar regras cadastro contas",
+        "description": "",
+        "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 276132000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BancoSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 928231100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BancoSteps.fecharBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 463712300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "adiciono a conta \"Conta mesmo nome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Conta mesmo nome\"",
+                  "offset": 17
+                }
+              ],
+              "location": "BancoSteps.adicionoAConta(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 45095000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "recebo a mensagem \"Já existe uma conta com esse nome!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Já existe uma conta com esse nome!\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BancoSteps.receboAMensagem(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      }
+    ],
+    "name": "Cadastro de contas",
+    "description": "\tComo um usuario \n\tGostaria de cadastrar contas\n\tPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+    "id": "cadastro-de-contas",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/bancoCucumber.feature",
+    "tags": [
+      {
+        "name": "@funcionais",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

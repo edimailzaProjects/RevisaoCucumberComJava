@@ -1,0 +1,750 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Deve alugar um filme com sucesso",
+        "description": "",
+        "id": "locadora;deve-alugar-um-filme-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23867700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "um filme",
+            "match": {
+              "location": "LocadoraSteps.umFilme(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "estoque",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "preco",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "tipo",
+                  "comum"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1189500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "alugar",
+            "match": {
+              "location": "LocadoraSteps.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1698900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "o preco do aluguel sera R$3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.o_preco_do_aluguel_sera_R$(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 3571500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a data de entrega sera em 1 dias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_data_de_entrega_sera_em_dias(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 126500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "o estoque do filme sera 1 unidade",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                }
+              ],
+              "location": "LocadoraSteps.o_estoque_do_filme_sera_unidade(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@unitarios"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Nao deve alugar filme sem estoque",
+        "description": "",
+        "id": "locadora;nao-deve-alugar-filme-sem-estoque",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 196000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "um filme com estoque de 0 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 24
+                }
+              ],
+              "location": "LocadoraSteps.um_filme_com_estoque_de_unidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 106800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "alugar",
+            "match": {
+              "location": "LocadoraSteps.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 33900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "nao sera possivel por falta de estoque",
+            "match": {
+              "location": "LocadoraSteps.nao_sera_possivel_por_falta_de_estoque()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 46200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "o estoque do filme sera 0 unidade",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 24
+                }
+              ],
+              "location": "LocadoraSteps.o_estoque_do_filme_sera_unidade(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@unitarios"
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Deve dar condicoes especiais conforme o tipo de aluguel",
+        "description": "",
+        "id": "locadora;deve-dar-condicoes-especiais-conforme-o-tipo-de-aluguel;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 332600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "um filme com estoque de 2 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 24
+                }
+              ],
+              "location": "LocadoraSteps.um_filme_com_estoque_de_unidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 60000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "quero que o preco seja R$4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 25
+                }
+              ],
+              "location": "LocadoraSteps.quero_que_o_preco_seja_R$(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 556600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "que o tipo do aluguel seja \"estendido\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"estendido\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LocadoraSteps.que_o_tipo_do_aluguel_seja_estendido(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 136000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "alugar",
+            "match": {
+              "location": "LocadoraSteps.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 59400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "o preco do aluguel sera R$8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.o_preco_do_aluguel_sera_R$(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 207100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "a data de entrega sera em 3 dias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_data_de_entrega_sera_em_dias(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 49700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "a pontuacao recebida sera 2 pontos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_pontuacao_recebida_sera_pontos(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@unitarios"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Deve dar condicoes especiais conforme o tipo de aluguel",
+        "description": "",
+        "id": "locadora;deve-dar-condicoes-especiais-conforme-o-tipo-de-aluguel;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 109000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "um filme com estoque de 2 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 24
+                }
+              ],
+              "location": "LocadoraSteps.um_filme_com_estoque_de_unidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 61500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "quero que o preco seja R$4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 25
+                }
+              ],
+              "location": "LocadoraSteps.quero_que_o_preco_seja_R$(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 75500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "que o tipo do aluguel seja \"comum\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"comum\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LocadoraSteps.que_o_tipo_do_aluguel_seja_estendido(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 67400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "alugar",
+            "match": {
+              "location": "LocadoraSteps.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 31600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "o preco do aluguel sera R$4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.o_preco_do_aluguel_sera_R$(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 218900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "a data de entrega sera em 1 dias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_data_de_entrega_sera_em_dias(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 26600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "a pontuacao recebida sera 1 pontos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_pontuacao_recebida_sera_pontos(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@unitarios"
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "Deve dar condicoes especiais conforme o tipo de aluguel",
+        "description": "",
+        "id": "locadora;deve-dar-condicoes-especiais-conforme-o-tipo-de-aluguel;;4",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 222800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "um filme com estoque de 2 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 24
+                }
+              ],
+              "location": "LocadoraSteps.um_filme_com_estoque_de_unidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 42800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "quero que o preco seja R$10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 25
+                }
+              ],
+              "location": "LocadoraSteps.quero_que_o_preco_seja_R$(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 49100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "que o tipo do aluguel seja \"estendido\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"estendido\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LocadoraSteps.que_o_tipo_do_aluguel_seja_estendido(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 77600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "alugar",
+            "match": {
+              "location": "LocadoraSteps.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 34300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "o preco do aluguel sera R$20",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.o_preco_do_aluguel_sera_R$(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 223500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "a data de entrega sera em 3 dias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_data_de_entrega_sera_em_dias(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 76400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "a pontuacao recebida sera 2 pontos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_pontuacao_recebida_sera_pontos(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@unitarios"
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Deve dar condicoes especiais conforme o tipo de aluguel",
+        "description": "",
+        "id": "locadora;deve-dar-condicoes-especiais-conforme-o-tipo-de-aluguel;;5",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 142500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "um filme com estoque de 2 unidades",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 24
+                }
+              ],
+              "location": "LocadoraSteps.um_filme_com_estoque_de_unidades(int)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 44400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "quero que o preco seja R$5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 25
+                }
+              ],
+              "location": "LocadoraSteps.quero_que_o_preco_seja_R$(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 51000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "que o tipo do aluguel seja \"semanal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"semanal\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LocadoraSteps.que_o_tipo_do_aluguel_seja_estendido(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 80400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "alugar",
+            "match": {
+              "location": "LocadoraSteps.alugar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 38500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "o preco do aluguel sera R$15",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.o_preco_do_aluguel_sera_R$(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 331200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "a data de entrega sera em 7 dias",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_data_de_entrega_sera_em_dias(int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 45100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "a pontuacao recebida sera 3 pontos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 26
+                }
+              ],
+              "location": "LocadoraSteps.a_pontuacao_recebida_sera_pontos(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@unitarios"
+          }
+        ]
+      }
+    ],
+    "name": "Locadora",
+    "description": "  Como um usuario\n\tEu quero cadastrar alugueis de filmes\n\tPara controlar precos e datas de entrega",
+    "id": "locadora",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/locadoraCucumber.feature",
+    "tags": [
+      {
+        "name": "@unitarios",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
